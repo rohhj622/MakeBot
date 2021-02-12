@@ -2,6 +2,7 @@ from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.action_chains import ActionChains
 import time
+from basic import ID, PW
 from random import randint
 
 random_wait_min = 3
@@ -18,8 +19,6 @@ def nextFeed():
     nextFeed.click()
 
 
-ID = "diamond_diealmond"
-PW = "1xlaheodnl!"
 
 browser = webdriver.Chrome("D:\\devEnvironment\\chromedriver.exe")
 browser.get("https://instagram.com")
